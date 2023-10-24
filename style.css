@@ -171,3 +171,114 @@
 }
 
 /* END OF HOME PAGE */
+
+/* START OF FILMS PAGE */
+
+.wrap {
+	display: flex;
+	top: 300px;
+}
+
+.split {
+	height: 100vh;
+	width: 50vw;
+	overflow: scroll;
+}
+
+.centered {
+	text-align: center;
+}
+
+
+
+.centered img {
+  width: 800px;
+
+}
+
+#titleFilm {
+	font-family: SofiaCoppola;
+	font-size: 80px;
+	color: deeppink;
+	text-align: center;
+}
+
+#filmDescription {
+	font-family: GirlCulture;
+	font-size: 30px;
+}
+
+#recommendations {
+	font-family: GirlCulture;
+	font-size: 25px;
+	color: deeppink;
+	text-align: center;
+}
+
+#recommendationsPics {
+	width: 200px;
+}
+
+/* END OF FILM PAGE */
+
+/* START OF ESSAYS PAGE */
+
+#imageBox {
+	display: flex;
+	justify-content: center;
+	position: relative;
+	text-align: center;
+}
+
+/*
+.essay1 {
+	position: absolute;
+	top: 50%;
+	left: 0%;
+	font-size: 40px;
+	text-wrap: wrap;
+}
+
+.essay2 {
+	position: absolute;
+	top: 50%;
+	left: 60%;
+	font-size: 40px;
+}
+
+.essay3 {
+	position: absolute;
+	top: 50%;
+	left: 80%;
+	font-size: 40px;
+}
+
+*/ 
+
+#headerEssays {
+	text-align: center;
+	font-family: SofiaCoppola;
+	font-size: 80px;
+	color: white;
+}
+
+#essaysTOC {
+	text-align: center;
+	font-family: SofiaCoppola;
+	font-size: 80px;
+	color: black;
+}
+
+div.scroll-container {
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+}
+
+div.scroll-container img {
+  padding: 10px;
+}
+
+a:hover {
+	color: white;
+}
