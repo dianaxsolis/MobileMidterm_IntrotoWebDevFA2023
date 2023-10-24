@@ -1,3 +1,5 @@
+/* FONTS */
+
 @font-face {
 	font-family: SofiaCoppola;
 	src: url(KUNSTLER.TTF);
@@ -7,6 +9,10 @@
 	font-family: GirlCulture;
 	src: url(AcciaSans-ExtraBoldItalic.ttf)
 }
+
+/* START OF HOME PAGE */
+
+/* HEADER */
 
 #header {
 	position: relative;
@@ -27,7 +33,6 @@
 	position: absolute;
 	top: -30%;
 	left: 100%; 
-	/*transform: translate(-50%, 50%); */
 	
 }
 
@@ -42,60 +47,122 @@
 
 #navBar a {
   float: left;
-  color: deeppink; /* Color of text when not active or hover */
+  color: deeppink; /* color of text when not active or hover */
   text-align: center;
-  padding: 14px 190px;
+  padding: 20px 210px;
   text-decoration: none;
   font-size: 20px;
 }
 
-/* Change the color of links on hover */
+/* change the color of links on hover */
 #navBar a:hover {
-  background-color: deeppink; /* When hoover, background turns deep pink and text turns white */
+  background-color: deeppink; /* when hoover, background turns deep pink and text turns white */
   color: white;
 }
 
-/* Add a color to the active link */
+/* add a color to the active link */
 #navBar a.active {
   color: white;
 }
 
-#collage {
-	background-image: url("collageFINAL.png");
-	height: 100%;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+#collageSlideshow {
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	height: 510px;
+	width: 728px;
+	margin: 0px auto;
+	padding: 0px;
 }
 
+.slide {
+	float: left;
+	height: 510px;
+	width: 728px;
+
+}
+
+.slideshowWrapper {
+	width: calc(250px * 4);
+	animation: slide 10s ease infinite;
+}
+
+.slide:nth-child(1) {
+	width: 50%;
+	background: white;
+}
+
+.slide:nth-child(2) {
+	width: 50%;
+	background-color: white;
+}
+
+.slide:nth-child(3) {
+	width: 50%;
+	background-color: white;
+}
+
+.slide:nth-child(4){
+	width: 50%;
+	background: yellow;
+}
+
+@keyframes slide {
+
+	20% {
+		margin-left: 0px;
+	}
+
+	40% {
+		margin-left: calc(-728px * 1);
+	}
+
+	60% {
+		margin-left: calc(-728px * 2);
+	}
+
+	80% {
+		margin-left: calc(-728px * 3);
+	}
+}
+
+/* DESCRIPTION */
 
 #descriptionTitle {
 	font-family: SofiaCoppola;
-	font-size: 125px;
+	font-size: 100px;
 	color: rgba(248,167,174,255);
 	text-align: center;
-	margin: 10px;
+	margin: 0px;
+	padding: 0px;
 }
 
 #descriptionBackground {
 	font-family: GirlCulture;
-	font-size: 50px;
+	font-size: 40px;
 	text-align: center;
 	color: black;
 }
+
+/* ICONS */
 
 #icons {
 	display: flex;
 }
 
-.column {
+.column1 {
+	flex: 33.33%;
+	padding: 5px;
+}
+
+.column2 {
 	flex: 33.33%;
 	padding: 5px;
 }
 
 #diary {
-	width: 50%;
-	height: 50%;
+	width: 75%;
+	height: 75%;
 }
 
 #camera {
@@ -103,3 +170,4 @@
 	height: 75%;
 }
 
+/* END OF HOME PAGE */
