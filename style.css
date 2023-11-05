@@ -144,35 +144,11 @@
 	color: black;
 }
 
-/* ICONS */
-
-#icons {
-	display: flex;
-}
-
-.column1 {
-	flex: 33.33%;
-	padding: 5px;
-}
-
-.column2 {
-	flex: 33.33%;
-	padding: 5px;
-}
-
-#diary {
-	width: 75%;
-	height: 75%;
-}
-
-#camera {
-	width: 75%;
-	height: 75%;
-}
-
 /* END OF HOME PAGE */
 
 /* START OF FILMS PAGE */
+
+/* https://stackoverflow.com/questions/51263115/split-screen-containers-with-scrolling */
 
 .wrap {
 	display: flex;
@@ -230,7 +206,8 @@
 	text-align: center;
 }
 
-/*
+/* https://www.w3schools.com/howto/howto_css_image_text.asp 
+
 .essay1 {
 	position: absolute;
 	top: 50%;
@@ -269,6 +246,8 @@
 	color: black;
 }
 
+/* https://blog.hubspot.com/website/horizontal-scrolling - https://www.w3schools.com/howto/howto_css_image_gallery_scroll.asp */
+
 div.scroll-container {
   overflow: auto;
   white-space: nowrap;
@@ -278,6 +257,8 @@ div.scroll-container {
 div.scroll-container img {
   padding: 10px;
 }
+
+/* https://www.w3schools.com/cssref/sel_hover.php */
 
 a:hover {
 	color: white;
