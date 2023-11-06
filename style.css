@@ -49,7 +49,7 @@
   float: left;
   color: deeppink; /* color of text when not active or hover */
   text-align: center;
-  padding: 20px 210px;
+  padding: 10px 115px;
   text-decoration: none;
   font-size: 20px;
 }
@@ -150,6 +150,33 @@
 
 /* https://stackoverflow.com/questions/51263115/split-screen-containers-with-scrolling */
 
+#navBarfilms {
+  font-family: GirlCulture;
+  background-color: rgba(248,167,174,255); /* Background color of navigation bar */
+  overflow: hidden;
+  margin: 20px;
+}
+
+#navBarfilms a {
+  float: left;
+  color: deeppink; /* color of text when not active or hover */
+  text-align: center;
+  padding: 10px 140px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* change the color of links on hover */
+#navBarfilms a:hover {
+  background-color: deeppink; /* when hoover, background turns deep pink and text turns white */
+  color: white;
+}
+
+/* add a color to the active link */
+#navBarfilms a.active {
+  color: white;
+}
+
 .wrap {
 	display: flex;
 	top: 300px;
@@ -199,6 +226,32 @@
 
 /* START OF ESSAYS PAGE */
 
+#navBaressays {
+  font-family: GirlCulture;
+  background-color: rgba(248,167,174,255); /* Background color of navigation bar */
+  overflow: hidden;
+  margin: 20px;
+}
+
+#navBaressays a {
+  float: left;
+  color: deeppink; /* color of text when not active or hover */
+  text-align: center;
+  padding: 10px 140px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* change the color of links on hover */
+#navBaressays a:hover {
+  background-color: deeppink; /* when hoover, background turns deep pink and text turns white */
+  color: white;
+}
+
+/* add a color to the active link */
+#navBaressays a.active {
+  color: white;
+}
 #imageBox {
 	display: flex;
 	justify-content: center;
@@ -262,4 +315,158 @@ div.scroll-container img {
 
 a:hover {
 	color: white;
+}
+
+#essaysTail {
+	width: 300px;
+	display: block;
+	margin-left: 35px;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 768px) {
+
+	#header {
+		margin-left: 50px;	
+		margin-top: 0px;
+		font-size: 30px;
+	}
+
+	#navBar {
+		text-align: center;
+		padding: 0px;
+		margin-top: 400px;
+		margin-left: 15px;
+	}
+
+	#headerImage {
+		visibility: hidden;
+	}
+
+	#collageSlideshow {
+		width: 350px;
+		margin: 0px;
+		overflow: hidden;
+	}
+
+	#descriptionTitle {
+		margin: 0px;
+		padding: 0px;
+		font-size: 115px;
+	}
+
+	#descriptionBackground {
+		font-size: 30px;
+		margin: 15px;
+	}
+
+	#navBarfilms {
+		margin: 15px;
+	}
+
+	#titleFilm {
+		font-size: 50px;
+	}
+
+	#filmStill {
+		width: 250px;
+	}
+
+	#filmDescription {
+		font-size: 20px;
+	}
+
+	#recommendations {
+		margin: 15px;
+		padding: 10px;
+	}
+
+	#navBaressays {
+		margin: 15px;
+	}
+}
+
+@media (min-width: 769px) and (max-width: 1023px) {
+	#header {
+		margin-left: 375px;	
+		margin-top: 0px;
+		font-size: 30px;
+	}
+
+	#navBar {
+		text-align: center;
+		padding: 30px;
+		margin-top: 400px;
+		margin-left: 5px;
+		width: 950px;
+	}
+
+	#headerImage {
+		visibility: hidden;
+	}
+
+	#collageSlideshow {
+		width: 1000px;
+		margin: 0px;
+		overflow: hidden;
+	}
+
+	#descriptionTitle {
+		margin: 0px;
+		margin-left: 200px;
+		padding: 0px;
+		font-size: 115px;
+	}
+
+	#descriptionBackground {
+		font-size: 30px;
+		margin: 15px;
+		margin-left: 200px;
+	}
+
+	#navBarfilms {
+		margin: 15px;
+		padding: 10px;
+		width: 750px;
+	}
+
+	.wrap {
+		padding: 5px;
+	}
+
+	.split {
+		padding: 5px;
+	}
+
+	.centered {
+		margin: 5px;
+	}
+
+	#titleFilm {
+		font-size: 50px;
+	}
+
+	#filmStill {
+		width: 250px;
+		margin: 5px;
+	}
+
+	#filmDescription {
+		font-size: 20px;
+	}
+
+	#recommendations {
+		margin: 15px;
+		padding: 10px;
+	}
+
+	#navBaressays {
+		margin: 15px;
+	}
+
+	#essaysTail {
+		width: 300px;
+		margin-left: 250px;
+	}
 }
